@@ -1,0 +1,38 @@
+<!doctype htlm>
+<html lang="ZH-CN">
+<head>
+	<meta charset ="UTF-8">
+	<title>puzzle</title>
+	<link rel="stylesheet" type="text/css" href="puzzle.css">
+	<script type="text/javascript" src="puzzle.js"></script>
+</head>
+<body>
+	<div id = "container">
+	<!--最外层div,用来包含里面的结构-->
+		<div id = "game">
+		<!--游戏区,大的div方块-->
+			<div id ="d1" onclick = "move(1)">1</div>
+			<!--小div,8个游戏块,点击move()函数,参数显示编号-->
+			<div id ="d2" onclick = "move(2)">2</div>
+			<div id ="d3" onclick = "move(3)">3</div>
+			<div id ="d4" onclick = "move(4)">4</div>
+			<div id ="d5" onclick = "move(5)">5</div>
+			<div id ="d6" onclick = "move(6)">6</div>
+			<div id ="d7" onclick = "move(7)">7</div>
+			<div id ="d8" onclick = "move(8)">8</div>
+		</div>
+		<div id = "control">
+		<!--游戏控制区-->
+			<p>
+				<rowspan id="TimeText">总用时</rowspan>
+				<rowspan id="timer"></rowspan>
+			</p>
+			<!--显示游戏时间区域-->
+			<p>
+				<rowspan id="start" onclick="start()">开始</rowspan>
+				<rowspan id="reset" onclick="reset()">重新开始</rowspan>
+			</p>
+			<!--显示游戏控制区域-->
+		</div>
+	</div>
+</body>
