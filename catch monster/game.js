@@ -9,7 +9,7 @@ var bkImage = new Image();
 bkImage.onload = function(){
 	bkReady = true;
 }
-bkImage.src = "/Users/puny/Downloads/image/background.png";
+bkImage.src = "images/background.png";
 
 //Hero image
 var heroReady = false;
@@ -17,7 +17,7 @@ var heroImage = new Image();
 heroImage.onload =  function(){
 	heroReady = true;
 }
-heroImage.src = "/Users/puny/Downloads/image/hero.png";
+heroImage.src = "images/hero.png";
 
 //Monster image
 var monsterReady = false;
@@ -25,8 +25,13 @@ var monsterImage = new Image();
 monsterImage.onload =	function(){
 	monsterReady = true;
 } 
-monsterImage.src = "/Users/puny/Downloads/image/monster.png"
+monsterImage.src = "images/monster.png"
 
+var hero {
+	speed = 256;
+}
+var monster {};
+var monsterCaught=0;
 //Handl keyboard controls
 var keysDown = {};
 
