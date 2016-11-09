@@ -81,9 +81,9 @@ function whereCanTo(cur_div){
 	//判断是否可移动函数，参数是大DIV的编号，不是小DIV的编号，因为小DIV编号跟可以去哪没关系，小DIV是会动的
 	var j=0;
 	var move_flag=false;
-	for (var j; j<d_driect[cur_div].length; ++j) {
+	for (var j; j<d_direct[cur_div].length; ++j) {
 		//把所有可能的位置先遍历一下
-		if(d[d_driect[cur_div][j]] == 0){
+		if(d[d_direct[cur_div][j]] == 0){
 			move_flag=true;
 			break;
 		}
@@ -91,7 +91,7 @@ function whereCanTo(cur_div){
 
 	};
 	if (move_flag==true) {
-		return d_driect[cur_div][j];
+		return d_direct[cur_div][j];
 	}else{
 		return 0;
 	}
@@ -100,7 +100,7 @@ function whereCanTo(cur_div){
 }
 //定时函数，每一秒执行一次
 function timer(){
-	timer+=1;//一秒钟加一,单位是秒
+	time+=1;//一秒钟加一,单位是秒
 	var min =parseInt(time/60);//把秒转换为分钟，一分钟60秒，取商就是分钟
 	var sec=time%60;//取余是秒
 	document.getElementById("timer").innerHTML=min+"分"+sec+"秒";//然后把时间更新显示出来
