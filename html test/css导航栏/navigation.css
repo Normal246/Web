@@ -1,0 +1,14 @@
+ul{
+	list-style: none;
+}
+a:link,a:visited{
+	text-decoration: none;
+	background-color: lightgray;
+}
+li{
+	display: inline;
+}
+a:active,a:hover{
+	background-color: cadetblue;
+
+}
