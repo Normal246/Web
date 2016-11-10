@@ -1,0 +1,42 @@
+.top{
+	background-color: steelblue;
+	width:100%;
+	height:70px;
+	text-align: left;
+}
+.topcenter{
+	margin: 0 auto;
+	background-color:cadetblue;
+	width: 75%;
+	height:70px;
+	text-align: center;
+}
+.middle{
+	width: 75%;
+	height: 700px;
+	margin: 8px auto;
+	background-color: gray;
+	text-align: center;
+}
+.middle1{
+	width: 100%;
+	height: 30%;
+	background-color: darkgreen;
+	margin: 0px;	
+	text-align: center;
+}
+.middle2{
+	width: 100%;
+	height:10%;
+	background-color: darkgreen;
+	text-align: center;
+}
+.bottom{
+	width: 75%;
+	height: 50px;
+	margin: 0 auto;
+	background-color:darkslategray ;
+	text-align: center;
+}
+
+
